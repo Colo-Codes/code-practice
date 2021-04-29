@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables practice</title>
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nutritional information</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste excepturi temporibus sequi, obcaecati neque eos repudiandae iusto unde velit praesentium maiores amet dolorem itaque sit odit, nisi voluptate accusamus at.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Menu item</th>
+                <th>Calories</th>
+                <th>Fat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken noodle soup</td>
+                <td>120</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Caesar salad</td>
+                <td>400</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam consectetur enim fugiat maxime recusandae aspernatur cupiditate perspiciatis nam explicabo quo dolor, nisi sunt voluptate dolore alias dignissimos omnis est!</p>
+    <hr>
+    <h1>Colspan</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>7:00pm</th>
+                <th>7:30pm</th>
+                <th>8:00pm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">The Sunday Night Movie</td>
+            </tr>
+            <tr>
+                <td>Perry Mason</td>
+                <td>Candid Camera</td>
+                <td>What's my line?</td>
+            </tr>
+            <tr>
+                <td>Bonanza</td>
+                <td colspan="2">The Wackiest Ship in the Army</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Rowspan</h1>
+    <table>
+        <thead>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apples</td>
+                <td rowspan="3">Oranges</td>
+                <td>Pears</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td rowspan="2">Pineapple</td>
+            </tr>
+            <tr>
+                <td>Lychees</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Caption</h1>
+    <table>
+        <caption>Nutritional information about food served in our restaurant</caption>
+        <thead>
+            <tr>
+                <th>Menu item</th>
+                <th>Calories</th>
+                <th>Fat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken noodle soup</td>
+                <td>120</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Caesar salad</td>
+                <td>400</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Improving accessibility</h1>
+    <table>
+        <tr>
+            <th scope="row">Mars</th>
+            <td>.95</td>
+            <td>.62</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th id="diameter">Diameter measured in earths</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td headers="diameter">.38</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
