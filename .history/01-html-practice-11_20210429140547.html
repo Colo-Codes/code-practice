@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Goose Bistro | Pizza-on-demand</title>
+</head>
+<body>
+    <h1>Black Goose Bistro | Pizza-on-demand</h1>
+    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    <form action="http://blackgoosebistro.com/pizza.php" method="POST">
+        <fieldset>
+        <legend>Your information</legend>
+        <ol>
+            <li>
+                <label for="userName">Name: </label>
+                <input type="text" name="customername" id="userName" placeholder="Name and Surname">
+            </li>
+            <li>
+                <label for="userAddress">Address: </label>
+                <input type="text" name="address" id="userAddress" placeholder="Number and street name">
+            </li>
+            <li>
+                <label for="userTel">Telephone number: </label>
+                <input type="text" name="telephone" id="userTel" placeholder="+62 (###) ####-#####">
+            </li>
+            <li>
+                <label for="userEmail">Email: </label>
+                <input type="text" name="email" id="userEmail" placeholder="your@email.address">
+            </li>
+            <li>
+                <label for="userDeliveryInstr">Delivery instructions: </label>
+                <textarea name="instructions" id="userDeliveryInstr" cols="30" rows="10" maxlength="400" placeholder="No more than 400 characters long"></textarea>
+            </li>
+        </ol>
+        </fieldset>
+        <h2>Design your dream pizza:</h2>
+        <fieldset>
+            <legend>Pizza specs</legend>
+            <p>Crust (choose one):</p>
+            <label for="classWhite">
+                <input type="radio" id="classWhite" name="crust" checked> Classic White
+            </label>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
