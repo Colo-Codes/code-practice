@@ -1,2 +1,2 @@
-# code-practice
-Practicing code
+# Web development
+Practicing code (HTML, CSS, JavaScript).
