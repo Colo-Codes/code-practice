@@ -1,2 +1,2 @@
 # Web development
-Practicing code (HTML, CSS, JavaScript).
+Code practice (HTML, CSS, JavaScript).
