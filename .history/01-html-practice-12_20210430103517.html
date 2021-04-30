@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing form controls</title>
+</head>
+<body>
+    <h1>Testing form controls</h1>
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <fieldset>
+        <legend>Testing form controls</legend>
+            <select name="varName" >
+                <option value="EBTG">Everything but the girl</option>
+                <option>Aerosmith</option>
+                <option>The Cure</option>
+            </select>
+            <hr>
+            <select name="icecream" size="7" multiple> <!-- The size attribute indicates the size of the selection box in number of lines -->
+                <optgroup label="Traditional">
+                    <option>Vanilla</option>
+                    <option>Chocolate</option>
+                </optgroup>
+                <optgroup label="Fancy">
+                    <option selected>Super praline</option>
+                    <option>Nut surprise</option>
+                    <option>Candy corn</option>
+                </optgroup>
+            </select>
+            <hr>
+            <p>Upload documents: </p>
+            <input type="file" name="document" accept=".doc,.docx,.pdf" multiple>
+            <hr>
+            <p>This is a hidden form control:</p>
+            <input type="hidden" name="success-link" value="http://hidden.url.to.redirect.afer.form.submition">
+            <hr>
+            <p>Date:</p>
+            <input type="date" name="dateName" value="2021-04-30">
+            <p>Time:</p>
+            <input type="time" name="timeName" value="15:30:59">
+            <p>Date and Time:</p>
+            <input type="datetime-local" name="datetimeName" value="2021-04-30T15:30:59">
+            <p>Month:</p>
+            <input type="month" name="monthName" value="2021-04">
+            <p>Week:</p>
+            <input type="week" name="weekName" value="2021-W17">
+            <p>Numerical input:</p>
+            <input type="number" name="numName" min="1" max="10">
+            <p>Numerical range:</p>
+            <input type="range" name="rangeName" min="0" max="100" step="1" value="35" id="this">
+            <output name="rangeName" for="this"></output>
+            <hr>
+            <p>Colour selector:</p>
+            <input type="color" name="colorName">
+            <hr>
+            <p>Progress:</p>
+            <progress max="100" value="50">50%</progress>
+            <p>Meter:</p>
+            <meter min="0" max="100" name="volume" value="60">60%</meter>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit form!">
+        <input type="reset" value="Reset">
+
+    
+    </form>
+
+
+
+
+</body>
+</html>
