@@ -14,12 +14,7 @@ body {
 }
 
 /* link styles */
-a:link, a:visited {
-  color: #DC6903;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: .2em;
-}
+a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
 
 
@@ -60,16 +55,11 @@ main {
   line-height: 1.8em;
   color: #555;
   padding: 1em;
-  border: double 4px #eaddc4;
-  border-radius: 25px;
 }
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
   color: #7A0002;
-  border-top: 1px solid;
-  border-left: 3px solid;
-  padding-left: 1em;
 }
 p.more {
   font-family: verdana, sans-serif;
@@ -83,7 +73,6 @@ aside {
   background-color: #F6F3ED;
   padding: 1em;
   padding-left: 45px;
-  border-radius: 25px;
 }
 /* misc styles */
 footer {

@@ -14,12 +14,7 @@ body {
 }
 
 /* link styles */
-a:link, a:visited {
-  color: #DC6903;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: .2em;
-}
+a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
 
 
@@ -67,9 +62,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
   color: #7A0002;
-  border-top: 1px solid;
-  border-left: 3px solid;
-  padding-left: 1em;
+  border-top: 1px solid black;;
 }
 p.more {
   font-family: verdana, sans-serif;

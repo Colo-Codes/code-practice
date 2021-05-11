@@ -1,12 +1,5 @@
 @charset "UTF-8";
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-  /* Enable to debug */
-  /* outline: #f66 dashed 1px; */
-}
+
 body {
   font-family: Georgia, serif;
   font-size: 100%;
@@ -14,12 +7,7 @@ body {
 }
 
 /* link styles */
-a:link, a:visited {
-  color: #DC6903;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: .2em;
-}
+a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
 
 
@@ -29,7 +17,6 @@ header {
   background:  url(../assets/img/croissants_banner.jpg) no-repeat center center;
   background-size: cover; 
   text-align: center;
-  height: 15em;
 }
 header p {
   font-style: italic;
@@ -59,17 +46,11 @@ main {
   background-color: white;
   line-height: 1.8em;
   color: #555;
-  padding: 1em;
-  border: double 4px #eaddc4;
-  border-radius: 25px;
 }
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
   color: #7A0002;
-  border-top: 1px solid;
-  border-left: 3px solid;
-  padding-left: 1em;
 }
 p.more {
   font-family: verdana, sans-serif;
@@ -81,16 +62,12 @@ p.more {
 aside {
   background: url(../assets/img/scallop.png) repeat-y left top;
   background-color: #F6F3ED;
-  padding: 1em;
-  padding-left: 45px;
-  border-radius: 25px;
 }
 /* misc styles */
 footer {
   color: #EADDC4;
   text-align: center;
   font-size: .8em;
-  padding: 1em;
 }
 h2 {
   font-family: 'Stint Ultra Expanded', cursive;
