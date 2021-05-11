@@ -4,6 +4,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0; /* Reset margins */
   /* Enable to debug */
   /* outline: #f66 dashed 1px; */
 }
@@ -11,7 +12,6 @@ body {
   font-family: Georgia, serif;
   font-size: 100%;
   background-color: white;
-  margin: 0; /* Reset margins */
 }
 
 /* link styles */
@@ -35,10 +35,6 @@ header {
 header p {
   font-style: italic;
   font-size: 1.2em;
-  margin-top: -12px;
-}
-header h1 {
-  margin-top: 1.5em;
 }
 
 /* nav styles */
@@ -57,9 +53,6 @@ nav ul li {
   text-transform: uppercase;
   letter-spacing: .2em;
 }
-nav ul {
-  margin: 0; /* Reset margins */
-}
 
 /* main "products" styles */
 main {
@@ -70,7 +63,6 @@ main {
   padding: 1em;
   border: double 4px #eaddc4;
   border-radius: 25px;
-  margin: 2.5%;
 }
 h3 {
   text-transform: uppercase;
@@ -79,7 +71,6 @@ h3 {
   border-top: 1px solid;
   border-left: 3px solid;
   padding-left: 1em;
-  margin-top: 2.5em;
 }
 p.more {
   font-family: verdana, sans-serif;
@@ -94,7 +85,6 @@ aside {
   padding: 1em;
   padding-left: 45px;
   border-radius: 25px;
-  margin: 1em 2.5% 0 10%;
 }
 /* misc styles */
 footer {
