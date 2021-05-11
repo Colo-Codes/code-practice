@@ -77,7 +77,7 @@ main img {
   margin: 0 1em 1em 0;
 }
 img[src*="muffin"] {
-  margin-left: 50px;
+  margin-left: 2em;
 }
 h3 {
   text-transform: uppercase;

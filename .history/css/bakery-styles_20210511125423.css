@@ -72,13 +72,6 @@ main {
   border-radius: 25px;
   margin: 2.5%;
 }
-main img {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-img[src*="muffin"] {
-  margin-left: 50px;
-}
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -92,7 +85,6 @@ p.more {
   font-family: verdana, sans-serif;
   text-transform: uppercase;
   font-size: .8em;
-  clear: left;
 }
 
 /* aside "hours" styles */
@@ -120,3 +112,50 @@ h2 {
   font-size: .8em;
   text-transform: uppercase;
 }
+
+/********************************************************/
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  border-style: double medium black;
+}/*
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  padding: 2em;
+}
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  padding: 2em;
+  border: 4px solid red;
+}
+
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  border: 4px solid red;
+  margin: 2em;
+}
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  border: 4px dotted black;
+  margin: 1em 6em;
+  padding: 1em 1em 6em;
+}
+p {
+  background-color: #c2f670;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  padding: 1em 50px;
+  margin: auto;
+}
+
+*/
