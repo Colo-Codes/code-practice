@@ -5,7 +5,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
   /* Enable to debug */
-  /* outline: #f66 dashed 1px; */
+  outline: #f66 dashed 1px;
 }
 body {
   font-family: Georgia, serif;
@@ -123,9 +123,4 @@ h2 {
   font-family: verdana, sans-serif;
   font-size: .8em;
   text-transform: uppercase;
-}
-div#award {
-  position: absolute;
-  top: 30px;
-  left: 50px;
 }

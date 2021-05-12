@@ -81,7 +81,7 @@ img[src*="bread"] {
 }
 img[src*="muffin"] {
   margin-left: 50px;
-  shape-outside: polygon(0px 0px, 197px 0px, 241px 31px, 241px 68px, 226px 82px, 219px 131px, 250px 142px, 250px 158px, 0px 158px);
+  shape-outside: circle(110px);
 }
 h3 {
   text-transform: uppercase;
@@ -123,9 +123,4 @@ h2 {
   font-family: verdana, sans-serif;
   font-size: .8em;
   text-transform: uppercase;
-}
-div#award {
-  position: absolute;
-  top: 30px;
-  left: 50px;
 }

@@ -125,7 +125,7 @@ h2 {
   text-transform: uppercase;
 }
 div#award {
-  position: absolute;
+  position: sticky;
   top: 30px;
   left: 50px;
 }
