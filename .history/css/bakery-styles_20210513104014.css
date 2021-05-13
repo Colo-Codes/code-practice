@@ -52,7 +52,7 @@ nav ul li a {
   padding: .5em 1em;
   margin: .5em;
 }
-nav ul li:first-child {
+nav ul li a:first-child {
   margin-right: auto;
 }
 nav ul li a:link, nav ul li a:visited {
