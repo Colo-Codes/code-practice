@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        header {
+            background-color: lightsalmon;
+        }
+        h1 {
+            text-align: center;
+        }
+        aside {
+            background-color: lightskyblue;
+        }
+        main {
+            background-color: lightslategray;
+            width: 70%;
+        }
+        footer {
+            background-color: lightseagreen;
+        }
+        .div-box {
+            width: 10rem;
+            display: block;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            border: 1px dashed white;
+            padding: 1rem;
+            margin: 2px;
+        }
+        h1, h2 {
+            margin: 1rem;
+        }
+        .main-boxes {
+            width: 100%;
+            /* padding: 1rem; */
+        }
+
+        /* Flexboxes */
+        #flex-container-nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav-boxes {
+            flex: 1 1 30rem; /* grow shrink basis */
+        }
+
+        #flex-container-aside-main-aside {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #flex-container-aside-main-aside * {
+            flex: auto;
+        }
+        #aside-right {
+            order: 3;
+        }
+
+        #flex-container-footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Main header</h1>
+        <nav>
+            <h2>Navbar</h2>
+            <div id="flex-container-nav">
+                <div class="nav-boxes div-box">1</div>
+                <div class="nav-boxes div-box">2</div>
+                <div class="nav-boxes div-box">3</div>
+            </div>
+        </nav>
+    </header>
+    <div id="flex-container-aside-main-aside">
+        <aside id="aside-left">
+            <h2>Aside Left</h2>
+            <div class="aside-boxes div-box">1</div>
+            <div class="aside-boxes div-box">2</div>
+            <div class="aside-boxes div-box">3</div>
+        </aside>
+        <aside id="aside-right">
+            <h2>Aside Right</h2>
+            <div class="aside-boxes div-box">1</div>
+            <div class="aside-boxes div-box">2</div>
+            <div class="aside-boxes div-box">3</div>
+        </aside>
+        <main>
+            <section>
+                <h2>Main 1</h2>
+                <div class="main-boxes div-box">Main A</div>
+            </section>
+            <section>
+                <h2>Main 2</h2>
+                <div class="main-boxes div-box">Main B</div>
+            </section>
+            <section>
+                <h2>Main 3</h2>
+                <div class="main-boxes div-box">Main C</div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+        <div id="flex-container-footer">
+            <div class="footer-boxes div-box">1</div>
+            <div class="footer-boxes div-box">2</div>
+            <div class="footer-boxes div-box">3</div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        header {
+            background-color: lightsalmon;
+        }
+        aside {
+            background-color: lightskyblue;
+        }
+        main {
+            background-color: lightslategray;
+        }
+        footer {
+            background-color: lightseagreen;
+        }
+        .div-box {
+            width: 30rem;
+            display: block;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            border: 1px dashed white;
+            margin: 1rem;
+        }
+        h1, h2 {
+            margin: 1rem;
+        }
+
+        /* Flexboxes */
+        #flex-container-nav {
+            display: flex;
+            /* flex: 1 1 auto; */
+        }
+        .nav-boxes {
+            flex-basis: 60rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Main header</h1>
+        <nav>
+            <h2>Navbar</h2>
+            <div id="flex-container-nav">
+                <div class="nav-boxes div-box">1</div>
+                <div class="nav-boxes div-box">2</div>
+                <div class="nav-boxes div-box">3</div>
+            </div>
+        </nav>
+    </header>
+    <aside id="aside-left">
+        <h2>Aside Left</h2>
+        <div class="aside-boxes div-box">1</div>
+        <div class="aside-boxes div-box">2</div>
+        <div class="aside-boxes div-box">3</div>
+    </aside>
+    <aside id="aside-right">
+        <h2>Aside Right</h2>
+        <div class="aside-boxes div-box">1</div>
+        <div class="aside-boxes div-box">2</div>
+        <div class="aside-boxes div-box">3</div>
+    </aside>
+    <main>
+        <section>
+            <h2>Main 1</h2>
+            <div class="main-boxes div-box">Main A</div>
+        </section>
+        <section>
+            <h2>Main 2</h2>
+            <div class="main-boxes div-box">Main B</div>
+        </section>
+        <section>
+            <h2>Main 3</h2>
+            <div class="main-boxes div-box">Main C</div>
+        </section>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+        <div class="footer-boxes div-box">1</div>
+        <div class="footer-boxes div-box">2</div>
+        <div class="footer-boxes div-box">3</div>
+    </footer>
+</body>
+
+</html>
