@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <!-- From https://codepen.io/apollo55/pen/jaBPPx -->
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "nav"
+                "header"
+                "title"
+                "."
+                "."
+                "aside"
+                "footer";
+            grid-gap: 1rem;
+        }
+
+        @media (min-width: 544px) {
+            .container {
+                grid-template-columns: 10em 1fr;
+                grid-template-areas: "header header"
+                    "title title"
+                    "nav   ."
+                    "nav   ."
+                    "nav   ."
+                    "aside ."
+                    "footer footer";
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                grid-template-columns: 10em 1fr 1fr 1fr;
+                grid-template-rows: auto auto 1fr auto;
+                grid-template-areas: "header header header header"
+                    "nav title title title"
+                    "nav .     .     ."
+                    "footer footer footer aside";
+                height: 80vh;
+            }
+        }
+
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .title {
+            grid-area: title;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        article {
+            /* auto-flow FTW ! */
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+
+        /* Decoration */
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 20px;
+            background: #fff;
+            font-family: "Century Gothic", helvetica, arial, sans-serif;
+            font-size: 1.2em;
+        }
+
+        div,
+        nav,
+        section,
+        article,
+        aside,
+        header,
+        footer,
+        main,
+        h2 {
+            padding: 1rem;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: normal;
+        }
+
+        nav {
+            background: dodgerblue;
+        }
+
+        section {
+            background: hotpink;
+        }
+
+        h2 {
+            background: #FFA500;
+            margin: 0;
+        }
+
+        aside {
+            background: #ccc;
+        }
+
+        header {
+            background: #2888D2;
+        }
+
+        article {
+            background: #00A753;
+        }
+
+        footer {
+            background: #FF002B;
+        }
+
+
+        h1 {
+            margin: 0 0 1em;
+            color: #868686;
+            text-align: center;
+            font-family: "Century Gothic", helvetica, arial, sans-serif;
+        }
+    </style>
+</head>
+
+<h1>Grid-Layout - RWD</h1>
+<div class="container">
+    <header>header</header>
+    <nav>nav - aside left</nav>
+    <aside>nav - aside right</aside>
+    <h2 class="title">title</h2>
+    <article>article 1</article>
+    <article>article 2</article>
+    <article>article 3</article>
+    <footer>footer</footer>
+</div>
+</body>
+
+</html>
