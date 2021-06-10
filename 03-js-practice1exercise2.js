@@ -47,14 +47,14 @@ for (let num = 1; num <= 100; num++) {
     /* 3rd way: */
     let fizz = num % 3 === 0, buzz = num % 5 === 0;
     console.log(fizz ? (buzz ? "FizzBuzz" : "Fizz") : (buzz ? "Buzz" : num));
-
-    /* 4th way (https://gist.github.com/jaysonrowe/1592432)
-    for(var i=1;i<=100;i++, msg=""){
-        if (!(i%3)) msg+="Fizz"; 
-        if (!(i%5)) msg+="Buzz"; 
-        console.log(msg || i); 
-    }
-    */
 }
+
+/* 4th way (https://gist.github.com/jaysonrowe/1592432)
+for(var i=1;i<=100;i++, msg=""){
+    if (!(i%3)) msg+="Fizz"; 
+    if (!(i%5)) msg+="Buzz"; 
+    console.log(msg || i); 
+}
+*/
 
 // By Damian Demasi, Jun-2021
