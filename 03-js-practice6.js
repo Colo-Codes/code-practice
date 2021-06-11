@@ -58,3 +58,12 @@ if (true) {
 console.log("Block scope - Global value after block:", myVar7); // -> Block scope - Global value after block: 70
 // console.log("Block scope - Global value after block:", myVar8); // -> ReferenceError: myVar8 is not defined
 console.log("Block scope - Global value after block:", myVar9); // -> Block scope - Global value after block: 90
+
+// --- Global vs Local scopes ---
+var someVar = "Hat";
+function myFun() {
+    var someVar = "Head";
+    console.log(someVar);
+}
+myFun();
+console.log(someVar);
