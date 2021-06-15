@@ -36,5 +36,40 @@ function listToArray(list) {
 console.log(listToArray(arrayToList([1, 2, 3])));
 
 // Third
+function prepend(element, list) {
+    return newList = {value: element, next: list};
+}
 
+console.log(prepend(101, arrayToList([1, 2, 3])));
 
+// Fourth
+function nth(list, number) {
+    return listToArray(list)[number];
+}
+
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), -1));
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), 0));
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), 1));
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), 2));
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), 3));
+console.log("nth: [1,2,3] -> ",nth(arrayToList([1, 2, 3]), 4));
+
+// Fifth
+function nthRecursive(list, number) {
+    if (number === 0) {
+        return list.value;
+    }
+    else if (list.next === null || number < 0) {
+        return undefined;
+    }
+    else {
+        return nthRecursive(list.next, number - 1);
+    }
+}
+
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), -1));
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), 0));
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), 1));
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), 2));
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), 3));
+console.log("nthRecursive: [1,2,3] -> ",nthRecursive(arrayToList([1, 2, 3]), 4));
